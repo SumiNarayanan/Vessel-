@@ -1,4 +1,4 @@
-console.log(heading)
+
 function loadContent(url) {
     var container = document.getElementById('content-container');
     var xhr = new XMLHttpRequest();
