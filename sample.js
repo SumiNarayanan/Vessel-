@@ -1,3 +1,4 @@
+console.log(heading)
 function loadContent(url) {
     var container = document.getElementById('content-container');
     var xhr = new XMLHttpRequest();
@@ -17,26 +18,7 @@ function loadContent(url) {
     xhr.send();
   }
 
- //image click
 
- 
-  // function enlargeImage(element) {
-  //   // Remove 'enlarged' class from all media elements
-  //   const mediaElements = document.querySelectorAll('.media-element');
-  //   mediaElements.forEach(el => el.classList.remove('enlarged'));
-
-  //   // Add 'enlarged' class to the clicked element
-  //   element.classList.add('enlarged');
-  // }
-
-  // // Close the enlarged image when clicking outside
-  // document.addEventListener('click', (event) => {
-  //   const clickedElement = event.target.closest('.media-element');
-  //   if (!clickedElement) {
-  //     const mediaElements = document.querySelectorAll('.media-element');
-  //     mediaElements.forEach(el => el.classList.remove('enlarged'));
-  //   }
-  // });
 
 
 //popup
@@ -53,6 +35,12 @@ function closePopup() {
   var popup = document.getElementById("popup");
   popup.style.display = "none";
 }
+
+
+
+
+
+
 
 
 
