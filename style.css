@@ -27,25 +27,34 @@ body {
 }
 .section-1 {
   
-  width: 1250px; 
+  /* width: 1250px;  */
+  width: 78.125rem;
   height: 100vh; 
   position: fixed;
-  /* width: 70%; */
- 
- 
+
 }
 
-  .section-2 {
-    /* background-color: #19222a; */
+.section-2 {
+   
     background-color:#1b203d;
-    /* background: linear-gradient(to bottom, #87CEEB, #4169E1); */
+   
     width: 100%;
-    /* height: 100vh; */
-    margin-left: 250px;
+   
+    /* margin-left: 250px; */
+    margin-left: 15.625rem;
+    
     display: flex;
     flex-direction: column;
     
+    
+  
+    
 }
+/* for right side content expansion while sidebar shrink ..class added by js*/
+.section-2.expanded {
+  margin-left: 5em; 
+}
+
 
 .section-2 div {
     flex: 1;
@@ -78,7 +87,11 @@ a {
   -webkit-transform: translateZ(0);
   visibility: visible;
   -webkit-backface-visibility: hidden;
+
+ 
+  transition: transform 0.5 ease;
 }
+
 
 header {
  
@@ -89,6 +102,33 @@ header {
   padding: 1.2em 1em;
   border:0.1em solid rgb(170, 10, 10);
 }
+
+/* sidearrow */
+.collapsed {
+  width: 8%; /* Adjust this width to fit your icons */
+  
+}
+
+.collapsed .sidebar-nav ul li a span {
+  display: none;  /* Hide the text labels */
+}
+.collapsed .sidebar-nav ul li a:after {
+  /* Hide the arrows */
+  display: none;
+}
+.collapsed .sidebar-nav ul li li {
+  display: none;
+}
+/* Optional: Adjust icon size and padding in collapsed state */
+.collapsed .sidebar-nav ul li i {
+  font-size: 1.8em; 
+  padding: 0.5em; 
+ 
+}
+.collapsed .side-arrow {
+  display: block; /* or `display: flex;` depending on your layout */
+}
+
 
 .sidebar-nav {
   position: fixed;
@@ -124,7 +164,7 @@ header {
   padding: 1.05em 1em;
   position: relative;
   display: block;
-
+  transition: color 0.3s ease, opacity 0.3s ease;
   &:hover {
     background-color: #272c4a;
 
@@ -149,6 +189,7 @@ header {
   position: absolute;
   right: 0.75em;
   top: 45%;
+   transition: opacity 0.3s ease; /*smooth sidearrow toggle */
 }
 
 .sidebar .nav-flyout {
@@ -171,10 +212,16 @@ header {
   transition: all 0.5s ease;
 }
 
-.side-arrow{
-  position: absolute;
- right: 11%;
- top: 1%;
+.side-arrow {
+  position: fixed; /* or absolute, depending on your layout */
+  top: 10px; /* Adjust as necessary */
+  right: 0px; /* Adjust to move the arrow icon into view when sidebar is collapsed */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+#toggleSidebar i {
+  /* existing styles */
+  transition: transform 0.3s ease; /* Adjust the time as needed */
 }
 
 /* vessel Registration */
@@ -332,15 +379,7 @@ svg {
   gap: var(--flow-spacer, 1rem);
 }
 
-.page-header {
-  /* padding-block: 5rem;
-  margin-block-end: 5rem; */
-  background-image: url("https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=1200"),
-    linear-gradient(-25deg, rgb(0 0 0 / 0), rgb(0 0 0 / 1) 50%);
-  background-size: cover;
-  background-blend-mode: multiply;
-  color: white;
-}
+
 
 .page-title {
   
@@ -559,3 +598,6 @@ svg {
   opacity: 1;
 }
 
+.default-page{
+  margin-left: 50px;
+}

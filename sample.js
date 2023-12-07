@@ -37,6 +37,29 @@ function closePopup() {
 }
 
 
+//Dashboard
+
+
+document.getElementById('toggleSidebar').addEventListener('click', function() {
+  var sidebar = document.querySelector('.sidebar');
+
+  //for right side content expansion when sidebar shrink
+  var content = document.querySelector('.section-2');
+
+  // Toggle the collapsed class on the sidebar
+  sidebar.classList.toggle('collapsed');
+
+
+ //for right side content expansion when sidebar shrink..class added by js
+  content.classList.toggle('expanded');
+
+  // Rotate the arrow icon based on the state
+  if (sidebar.classList.contains('collapsed')) {
+      arrowIcon.style.transform = 'rotate(180deg)';
+  } else {
+      arrowIcon.style.transform = 'rotate(0deg)';
+  }
+});
 
 
 

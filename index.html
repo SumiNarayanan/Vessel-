@@ -1,129 +1,190 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-</head>
-<body>
-   
-      <div class="main" >
-        <div class="section-1" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="section-1">
         <aside class="sidebar">
-               <header >
-               Logo
-              <!-- <img src="./Logo.jpg" width="100px" height="40px" alt="logo"> -->
-              <div class="side-arrow">
-                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-              </div>
-            </header>
-            
-            
+          <header>
+            Logo
+            <!-- <img src="./Logo.jpg" width="100px" height="40px" alt="logo"> -->
+            <div class="side-arrow" id="toggleSidebar">
+              <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+            </div>
+          </header>
+
           <nav class="sidebar-nav">
-       
             <ul>
               <li>
-                <a href="#Vessel Management" ><i class="ion-bag"></i> <span>Vessel Management</span></a>
+                <a href="#Vessel Management"
+                  ><i class="ion-bag"></i> <span>Vessel Management</span></a
+                >
                 <ul class="nav-flyout">
                   <li>
-                    <a href="#Vessel Registration" onclick="loadContent('vessel-registration.html')"><i class="ion-ios-color-filter-outline"></i>Vessel Registration</a>
-                  
-                </li>
-                
+                    <a
+                      href="#Vessel Registration"
+                      onclick="loadContent('vessel-registration.html')"
+                      ><i class="ion-ios-color-filter-outline"></i>Vessel
+                      Registration</a
+                    >
+                  </li>
+
                   <li>
-                    <a href="#Voyage Declaration" onclick="loadContent('voyage-declaration.html')"><i class="ion-ios-clock-outline"></i>Voyage Declaration</a>
+                    <a
+                      href="#Voyage Declaration"
+                      onclick="loadContent('voyage-declaration.html')"
+                      ><i class="ion-ios-clock-outline"></i>Voyage
+                      Declaration</a
+                    >
                   </li>
                   <li>
-                    <a href="#Service" onclick="loadContent('voyage-declaration.html')"><i class="ion-heart-broken"></i>Service</a>
+                    <a
+                      href="#Service"
+                      onclick="loadContent('voyage-declaration.html')"
+                      ><i class="ion-heart-broken"></i>Service</a
+                    >
                   </li>
-                 
+
                   <li>
-                    <a href="#Submenu 4"><i class="ion-heart-broken"></i>Submenu 4</a>
+                    <a href="#Submenu 4"
+                      ><i class="ion-heart-broken"></i>Submenu 4</a
+                    >
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#Vessel Operation"><i class="ion-ios-settings"></i> <span class="">Vessel Operation</span></a>
+                <a href="#Vessel Operation"
+                  ><i class="ion-ios-settings"></i>
+                  <span class="">Vessel Operation</span></a
+                >
                 <ul class="nav-flyout">
                   <li>
-                    <a href="#Manifest"><i class="ion-ios-alarm-outline"></i>Manifest</a>
+                    <a href="#Manifest"
+                      ><i class="ion-ios-alarm-outline"></i>Manifest</a
+                    >
                   </li>
                   <li>
-                    <a href="#Discharge List"><i class="ion-ios-camera-outline"></i>Discharge List</a>
+                    <a href="#Discharge List"
+                      ><i class="ion-ios-camera-outline"></i>Discharge List</a
+                    >
                   </li>
                   <li>
-                    <a href="#Load ListHate"><i class="ion-ios-chatboxes-outline"></i>Load ListHate</a>
+                    <a href="#Load ListHate"
+                      ><i class="ion-ios-chatboxes-outline"></i>Load ListHate</a
+                    >
                   </li>
                   <li>
-                    <a href="#Delivery Order"><i class="ion-ios-cog-outline"></i>Delivery OrderGrinder</a>
+                    <a href="#Delivery Order"
+                      ><i class="ion-ios-cog-outline"></i>Delivery
+                      OrderGrinder</a
+                    >
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#"><i class="ion-ios-briefcase-outline"></i> <span class="">Folio</span></a>
+                <a href="#"
+                  ><i class="ion-ios-briefcase-outline"></i>
+                  <span class="">Folio</span></a
+                >
                 <ul class="nav-flyout">
                   <li>
                     <a href="#"><i class="ion-ios-flame-outline"></i>Burn</a>
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-lightbulb-outline"></i>Bulbs</a>
+                    <a href="#"
+                      ><i class="ion-ios-lightbulb-outline"></i>Bulbs</a
+                    >
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-location-outline"></i>Where You</a>
+                    <a href="#"
+                      ><i class="ion-ios-location-outline"></i>Where You</a
+                    >
                   </li>
                   <liF>
-                    <a href="#"><i class="ion-ios-locked-outline"></i>On Lock</a>
+                    <a href="#"
+                      ><i class="ion-ios-locked-outline"></i>On Lock</a
+                    >
                   </liF>
-                   <li>
-                    <a href="#"><i class="ion-ios-navigate-outline"></i>Ghostface</a>
+                  <li>
+                    <a href="#"
+                      ><i class="ion-ios-navigate-outline"></i>Ghostface</a
+                    >
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#"><i class="ion-ios-analytics-outline"></i> <span class="">Graphicals</span></a>
+                <a href="#"
+                  ><i class="ion-ios-analytics-outline"></i>
+                  <span class="">Graphicals</span></a
+                >
                 <ul class="nav-flyout">
                   <li>
                     <a href="#"><i class="ion-ios-timer-outline"></i>Timers</a>
                   </li>
                   <li>
-                    <a href="#"><i class="ion-arrow-graph-down-left"></i>You Lose</a>
+                    <a href="#"
+                      ><i class="ion-arrow-graph-down-left"></i>You Lose</a
+                    >
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-partlysunny-outline"></i>Stormy</a>
+                    <a href="#"
+                      ><i class="ion-ios-partlysunny-outline"></i>Stormy</a
+                    >
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-timer-outline"></i>Lookie Look</a>
+                    <a href="#"
+                      ><i class="ion-ios-timer-outline"></i>Lookie Look</a
+                    >
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-game-controller-a-outline"></i>Dork Mfer</a>
+                    <a href="#"
+                      ><i class="ion-ios-game-controller-a-outline"></i>Dork
+                      Mfer</a
+                    >
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#"><i class="ion-ios-paper-outline"></i> <span class="">Papers</span></a>
+                <a href="#"
+                  ><i class="ion-ios-paper-outline"></i>
+                  <span class="">Papers</span></a
+                >
                 <ul class="nav-flyout">
                   <li>
-                    <a href="#"><i class="ion-ios-filing-outline"></i>File Cab</a>
+                    <a href="#"
+                      ><i class="ion-ios-filing-outline"></i>File Cab</a
+                    >
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-information-outline"></i>Infos</a>
+                    <a href="#"
+                      ><i class="ion-ios-information-outline"></i>Infos</a
+                    >
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-paperplane-outline"></i>Planes</a>
+                    <a href="#"
+                      ><i class="ion-ios-paperplane-outline"></i>Planes</a
+                    >
                   </li>
                   <li>
                     <a href="#"><i class="ion-android-star-outline"></i>Shop</a>
@@ -131,51 +192,55 @@
                 </ul>
               </li>
               <li>
-                <a href="#"><i class="ion-ios-navigate-outline"></i> <span class="">Ass Finder</span></a>
+                <a href="#"
+                  ><i class="ion-ios-navigate-outline"></i>
+                  <span class="">Ass Finder</span></a
+                >
                 <ul class="nav-flyout">
                   <li>
                     <a href="#"><i class="ion-ios-flame-outline"></i>Burn</a>
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-lightbulb-outline"></i>Bulbs</a>
+                    <a href="#"
+                      ><i class="ion-ios-lightbulb-outline"></i>Bulbs</a
+                    >
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-location-outline"></i>Where You</a>
+                    <a href="#"
+                      ><i class="ion-ios-location-outline"></i>Where You</a
+                    >
                   </li>
                   <li>
-                    <a href="#"><i class="ion-ios-locked-outline"></i>On Lock</a>
+                    <a href="#"
+                      ><i class="ion-ios-locked-outline"></i>On Lock</a
+                    >
                   </li>
-                   <li>
-                    <a href="#"><i class="ion-ios-navigate-outline"></i>Ghostface</a>
+                  <li>
+                    <a href="#"
+                      ><i class="ion-ios-navigate-outline"></i>Ghostface</a
+                    >
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#" ><i class="ion-ios-medical-outline"></i> <span class="">Cocaine</span></a>
+                <a href="#"
+                  ><i class="ion-ios-medical-outline"></i>
+                  <span class="">Cocaine</span></a
+                >
               </li>
             </ul>
           </nav>
-
-        
-          
         </aside>
-        
       </div>
-      <div id="content-container"  class="section-2">
-       
-          <div >
-
-            <h2>Default Content Goes Here</h2>
-            <p>This is the default content when the page loads.</p>
+      <div id="content-container" class="section-2">
+        <div class="default-page">
+          <h2>Default Content Goes Here</h2>
+          <p>This is the default content when the page loads.</p>
         </div>
 
-        <div >
-
-        </div>
+        <div></div>
       </div>
-     
-      </div>
-     
-</body>
-<script src="/sample.js"></script>
+    </div>
+  </body>
+  <script src="/sample.js"></script>
 </html>
